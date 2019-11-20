@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: StarrySky_Sphere_Large
+  m_Shader: {fileID: 4800000, guid: 14cbe751f44376b45bf313f4448d2349, type: 3}
+  m_ShaderKeywords: _USEAUTOSTREAMANIMATION_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _AutoScroll: 0
+    - _ColorIntensity: 40
+    - _ColorType: 0
+    - _Cull: 0
+    - _DstFactor: 10
+    - _MinimumAlpha: 0
+    - _NoisePower: 8.03
+    - _NoiseScale: 3
+    - _Scale: 13
+    - _ScrollAmount: 0
+    - _ScrollSpeed: 0.0001
+    - _SrcFactor: 5
+    - _StarNum: 1
+    - _StarSize: 0.037
+    - _StreamAmount: 0
+    - _StreamSpeed: 0.2
+    - _UseAutoStreamAnimation: 1
+    - _ZWrite: 0
+    m_Colors:
+    - _BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MultiplyColor: {r: 1024, g: 1024, b: 1024, a: 1}
+    - _ScrollVector: {r: 1, g: 0, b: 1, a: 0}
+    - _SolidColor: {r: 2, g: 2, b: 0, a: 1}
+    - _StreamVector: {r: 1, g: 0, b: 1, a: 0}

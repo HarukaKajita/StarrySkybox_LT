@@ -1,4 +1,4 @@
-﻿Shader "StarrySky/Skybox"
+﻿Shader "StarrySky/Skybox/SuperEasyLogic"
 {
   Properties { 
       _Scale ("Scale", Range(0,100)) = 20
