@@ -26,7 +26,7 @@ float _ColorIntensity;
 
 //twinkleAnimation
 float _NoiseScale;
-float _MinimumAlpha;
+float _MinimumStrength;
 float _NoisePower;
 bool _AutoScroll;
 float3 _ScrollVector;
@@ -72,10 +72,11 @@ fixed4 frag(v2f i): SV_Target
         float3 starPos = rand3D(localOrigin + j)*0.5+0.5;
         float dist = length(localPos - starPos);
         if(dist < _StarSize){
+            float interpolate = 1- pow(dist / _StarSize,1);//smoothstep(1,0, );
             fixed4 starColor = getStarColor(starPos);
             float  twinkleStrength = getTwinkleStrength(starPos + localOrigin);
             starColor.rgb *= twinkleStrength;
-            col += starColor;
+            col += starColor * interpolate;
             break;
         }
     }
@@ -91,6 +92,7 @@ fixed4 getStarColor(float3 pos){
     if(_ColorType == 0){//Random color
         
         baseColor.rgb = rand3D(pos)*0.5+0.5;
+        baseColor *= _SolidColor;
 
     } else if(_ColorType == 1){//Solid color
         baseColor = _SolidColor;
@@ -105,7 +107,7 @@ float getTwinkleStrength(float3 pos){
     noisePos = (noisePos + _ScrollAmount * _ScrollVector) * _NoiseScale;//ノイズ座標決定
     float noiseValue = pNoise(noisePos);
     noiseValue = pow(noiseValue, _NoisePower);
-    float strength = (1.0 - _MinimumAlpha) * noiseValue + _MinimumAlpha;//_MinimumAlpha ~ 1の範囲で返す(0~1)
+    float strength = (1.0 - _MinimumStrength) * noiseValue + _MinimumStrength;//_MinimumStrength ~ 1の範囲で返す(0~1)
     return strength;
 }
 

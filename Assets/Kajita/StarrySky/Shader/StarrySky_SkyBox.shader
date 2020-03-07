@@ -25,7 +25,7 @@ Shader "Kajita/StarrySky/Skybox"
 
       [Header(Twinkle Animation)]
       _NoiseScale ("Noise Scale", float) = 10
-      _MinimumAlpha ("Minimum Alpha", Range(0,1)) = 0
+      _MinimumStrength ("Minimum Strength", Range(0,1)) = 0
       _NoisePower ("Noise Power", float) = 1
       
       [Toggle] _AutoScroll ("Auto Scroll", int) = 1

@@ -21,26 +21,27 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - _AutoScroll: 1
-    - _ColorIntensity: 25.2
+    - _ColorIntensity: 5
     - _ColorType: 0
     - _Cull: 0
     - _DstFactor: 10
     - _MinimumAlpha: 0
-    - _NoisePower: 8.03
-    - _NoiseScale: 3
+    - _MinimumStrength: 0.37
+    - _NoisePower: -2.79
+    - _NoiseScale: 0.1
     - _Scale: 25
     - _ScrollAmount: 0
-    - _ScrollSpeed: 0.001
+    - _ScrollSpeed: 3.18
     - _SrcFactor: 5
     - _StarNum: 10
     - _StarSize: 0.03
     - _StreamAmount: 0
-    - _StreamSpeed: 0.07
+    - _StreamSpeed: 0.01
     - _UseAutoStreamAnimation: 1
     - _ZWrite: 0
     m_Colors:
     - _BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
     - _MultiplyColor: {r: 766.9961, g: 766.9961, b: 766.9961, a: 1}
     - _ScrollVector: {r: 1, g: 1, b: 1, a: 0}
-    - _SolidColor: {r: 2, g: 2, b: 0, a: 1}
+    - _SolidColor: {r: 0.70624775, g: 0.64790034, b: 0.549674, a: 1}
     - _StreamVector: {r: 1, g: 0, b: -1, a: 0}

@@ -4,11 +4,12 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: StarrySky_Sphere_Large
   m_Shader: {fileID: 4800000, guid: 14cbe751f44376b45bf313f4448d2349, type: 3}
-  m_ShaderKeywords: _USEAUTOSTREAMANIMATION_ON
+  m_ShaderKeywords: _AUTOSCROLL_ON _USEAUTOSTREAMANIMATION_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,27 +20,28 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _AutoScroll: 0
-    - _ColorIntensity: 40
+    - _AutoScroll: 1
+    - _ColorIntensity: 16.4
     - _ColorType: 0
     - _Cull: 0
     - _DstFactor: 10
     - _MinimumAlpha: 0
-    - _NoisePower: 8.03
-    - _NoiseScale: 3
+    - _MinimumStrength: 1
+    - _NoisePower: 0.5
+    - _NoiseScale: 1
     - _Scale: 13
     - _ScrollAmount: 0
-    - _ScrollSpeed: 0.0001
+    - _ScrollSpeed: 41.53
     - _SrcFactor: 5
     - _StarNum: 1
     - _StarSize: 0.037
     - _StreamAmount: 0
-    - _StreamSpeed: 0.2
+    - _StreamSpeed: 0.1
     - _UseAutoStreamAnimation: 1
     - _ZWrite: 0
     m_Colors:
     - _BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
     - _MultiplyColor: {r: 1024, g: 1024, b: 1024, a: 1}
     - _ScrollVector: {r: 1, g: 0, b: 1, a: 0}
-    - _SolidColor: {r: 2, g: 2, b: 0, a: 1}
+    - _SolidColor: {r: 2.670157, g: 0, b: 2.670157, a: 1}
     - _StreamVector: {r: 1, g: 0, b: 1, a: 0}
